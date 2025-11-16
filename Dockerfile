@@ -14,4 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Указываем команду запуска бота
-CMD ["python", "perm_situ_bot.py"]
+
+CMD ["python", "-u", "perm_situ_bot.py"]
