@@ -1,14 +1,12 @@
 version: "3.9"
 services:
-  perm_situ_bot:
+  perm-situ-bot:
     build: .
     container_name: perm-situ-bot
     restart: unless-stopped
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
       - TZ=Asia/Yekaterinburg
-    volumes:
-      - ./qa_data.json:/app/qa_data.json:ro
     logging:
       options:
         max-size: "10m"
